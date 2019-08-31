@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<h2>JavaSCript Arrays</h2>
+
+
+
+<p id="demo"></p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+	fruits.push("Kiwi");
+	document.getElementById("demo").innerHTML = fruits;
+}
+
+</script>
+</body>
+</html>

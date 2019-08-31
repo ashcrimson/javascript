@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<h2>JavaSCript Arrays</h2>
+
+
+
+<p id="demo"></p>
+
+<script>
+var fruits, text, flen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[6] = "Lemon";
+
+flen = fruits.length;
+text = "";
+for (i = 0; i < flen; i++) {
+	text += fruits[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+
+</script>
+</body>
+</html>
