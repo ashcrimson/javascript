@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<p>JavaScript objects are mutable.</p>
+<p>Any changes to a copy of an object will also change the original.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+	firstName:"John",
+	lastName:"Doe",
+	age: 50,
+	eyecolor:"blue"
+};
+
+person.nationality = "English";
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.nationality + ":";
+</script>	
+</body>
+</html>
