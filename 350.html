@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<form ">
+<select name="" id="mySelect" size="4">
+	<option value="">Apple</option>
+	<option value="">Pear</option>
+	<option value="">Banana</option>
+	<option value="">Orange</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Disable list">
+
+</form>
+
+<p>The id of the form is:</p>
+<p id="demo"></p>
+
+<script>
+function getOption() {
+	var obj = document.getElementById("mySelect");
+	document.getElementById("demo").innerHTML =
+	obj.options[obj.selectedIndex].text;
+}
+</script>
+	
+</body>
+</html>

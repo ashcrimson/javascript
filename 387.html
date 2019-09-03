@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>
+function changeBorder(id) {
+	document.getElementById(id).createCaption().innerHTML =
+	"My new caption";
+}
+</script>
+</head>
+<body>
+
+<table style="border:1px solid black" id="myTable">
+	<tr>
+		<td>100</td>
+		<td>200</td>
+	</tr>
+	<tr>
+		<td>300</td>
+		<td>400</td>
+	</tr>
+</table>
+
+<p id="demo"></p>
+
+<p>
+<input type="button" 
+onclick="document.getElementById('myTable').deleteRow(0)" value="Change Border">
+</p>	
+</body>
+</html>

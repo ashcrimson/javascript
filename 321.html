@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<h2>Finding HTML Elements Using document.anchors</h2>
+
+<a href="" name="html">HTML Tutorial</a>
+<a href="" name="css">CSS Tutorial</a>
+<a href="" name="xml">XML Tutorial</a>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Numbers of anchors are: " + document.anchors.length;
+</script>
+	
+</body>
+</html>

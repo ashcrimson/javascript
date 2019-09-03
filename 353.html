@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<form ">
+<select name="" id="mySelect" size="4">
+	<option value="">Apple</option>
+	<option value="">Pear</option>
+	<option value="">Banana</option>
+	<option value="">Orange</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Disable list">
+
+</form>
+
+
+<p id="demo"></p>
+
+<script>
+function getOption() {
+	x = document.getElementById("mySelect");
+	x.options[x.selectedIndex].text = "Melon";
+}
+</script>
+	
+</body>
+</html>

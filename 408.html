@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>
+function bigImg(x) {
+	x.style.height = "64px";
+	x.style.width = "64px";
+}
+
+function normalImg(x) {
+	x.style.height = "32px";
+	x.style.width = "32px";
+}
+</script>
+</head>
+<body>
+
+<img src="smiley.gif" alt="Smiley" onmouseover="bigImg(this)"
+ onmouseout="normalImg(this)" border="0" src="smiley.gif" width="32" height="32">
+	
+</body>
+</html>

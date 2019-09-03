@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<h2>Finding HTML Elements Using document.images</h2>
+
+<img src="pic_htmltree.gif" width="486" height="266" alt="" id="img1">
+<img src="pic_navigate.gif" width="362" height="255" alt="">
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Number of images: " + document.images[0].id;
+</script>
+	
+</body>
+</html>

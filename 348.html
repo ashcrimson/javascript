@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<form action="" id="myForm">
+<select name="" id="mySelect">
+	<option value="">Apple</option>
+	<option value="">Pear</option>
+	<option value="">Banana</option>
+	<option value="">Orange</option>
+</select>
+<br><br>
+<input type="button" onclick="changeSize()" value="Disable list">
+
+</form>
+
+<p>The id of the form is:</p>
+<p id="demo"></p>
+
+<script>
+function changeSize() {
+	document.getElementById("mySelect").size = 4;
+}
+</script>
+	
+</body>
+</html>

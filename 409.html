@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>
+function writeText(txt) {
+	document.getElementById("desc").innerHTML = txt;
+}
+</script>
+</head>
+<body>
+
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+<area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun" target="_blank"
+onmouseover="writeText('The Sun and the gas giant planets like Jupiter are by far the largest objects in our Solar System.')">	
+
+<area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury" target="_blank" onmouseover="writeText('The planet Mercury is very difficult to study from the Earth because it is always so close to the Sun.')">
+
+<area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus"
+onmouseover="writeText('Until the 1960s, Venus was often considered a twin sister to the Earth because Venus is the nearest planet to us, and because the two planets seem to share many characteristics.')">
+</map>	
+
+<p id="desc"></p>
+</body>
+</html>

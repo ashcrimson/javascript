@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>
+function whichElement(e) {
+	var targ;
+	if (!e) {
+		var e = window.event;
+	}
+	if (e.target) {
+		targ=e.target;
+	} else if (e.srcElement) {
+		targ=e.srcElement;
+	}
+	var tname;
+	tname = targ.tagName;
+	alert("You clicked on a " + tname + " element.");
+}
+</script>
+</head>
+<body onmousedown="whichElement(event)">
+
+<p>Paragraph</p>
+<h3>Heading</h3>
+<img src="smiley.gif" alt="Smiley" width="32" height="32">
+<p>Paragraph</p>
+</body>
+</html>

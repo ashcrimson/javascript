@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<h2>Findind HTML Elements Using document.links</h2>
+
+<p><a href="#">HTML</a>
+<br>
+<a href="#">CSS</a>
+</p>
+
+<p id="demo"></p>	
+
+<script>
+document.getElementById("demo").innerHTML =
+"Number of links: " + document.links[0].href;
+</script>
+</body>
+</html>
