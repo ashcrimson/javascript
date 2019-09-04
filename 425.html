@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>
+var myWindow;
+function openWin() {
+	myWindow = window.open("", "", "width=400, height=200");
+	myWindow.blur();
+}
+function blurWin() {
+	myWindow.blur();
+}
+function focusWin() {
+	myWindow.focus();
+}
+</script>
+</head>
+<body>
+
+<input type="button" value="Open new window" onclick="openWin()">
+<input type="button" value="Close myWindow" onclick="closeWin()">
+	
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>
+function isKeyPressed(event) {
+	var text = "The shift key was NOT pressed!";
+	if (event.shiftKey == 1) {
+		text = "The shift key was pressed!";
+	}
+	document.getElementById("demo").innerHTML = text;
+}
+</script>
+</head>
+<body onmousedown="isKeyPressed(event)">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellendus placeat veniam incidunt, corrupti iste numquam necessitatibus nostrum libero tempore eum ut non deleniti sint hic reprehenderit optio esse maxime?</p>
+
+<p id="demo"></p>
+	
+</body>
+</html>

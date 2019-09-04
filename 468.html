@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<p id="demo">Clock</p>
+
+<button onclick="clearInterval(myTimer">Stop</button>
+
+<script>
+var myTimer = setInterval(myClock, 1000);
+function myClock() {
+	document.getElementById("demo").innerHTML = new Date().toLocaleTimeString();
+}
+</script>
+	
+</body>
+</html>

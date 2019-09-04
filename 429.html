@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script>
+var myWindow;
+function openWin() {
+	myWindow=window.open("","","width=400, height=200");
+}
+function moveWin() {
+	myWindow.moveTo(300,0);
+	myWindow.focus();
+}
+</script>
+</head>
+<body>
+
+<input type="button" value="Open myWindow" onclick="openWin()">
+<br><br>
+<input type="button" value="Move myWindow" onclick="moveWin()">
+	
+</body>
+</html>

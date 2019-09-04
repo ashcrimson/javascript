@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<button onclick="setInterval(myCounter, 1000)">Start counter!</button>
+
+<p id="demo">Click on the button...</p>
+
+<script>
+var c = 0;
+function myCounter() {
+	document.getElementById("demo").innerHTML = ++c;
+}
+</script>
+	
+</body>
+</html>
